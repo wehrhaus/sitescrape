@@ -1,0 +1,34 @@
+extends layout
+
+block append content
+    
+    form(method="post", action="/amass", class="hero-unit pull-left", accept-charset="utf-8")
+            
+        fieldset
+            legend SiteScrape Request Form
+            
+            span.help-block fields marked with an (
+                mark *
+                ) are required
+                
+            ol
+                li
+                    label(for="url") Site URL
+                        mark *
+                    input(name="url", type="text", placeholder="Site URL", autofocus="autofocus", required="required", aria-required="true")
+                li
+                    label(for="username") Site Username
+                    input(name="username", type="text", placeholder="Site Username")
+                li
+                    label(for="password") Site Password
+                    input(name="password", type="password", placeholder="Site Password")
+                li
+                    label(for="width") Viewport Width
+                        mark *
+                    input(name="width", type="number", placeholder="width in px", required="required", aria-required="true", pattern="[0-9]+")
+                li
+                    label(for="height") Viewport Height
+                        mark *
+                    input(name="height", type="number", placeholder="height in px", required="required", aria-required="true", pattern="[0-9]+")
+                    
+                button(type="submit", class="btn") Submit

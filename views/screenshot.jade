@@ -1,0 +1,16 @@
+extends layout
+
+block append content
+    .hero-unit
+        p URL: 
+            a(href="#{data.url}", target="_blank") #{data.url}
+        p Viewport Width: #{data.width}
+        p Viewport Height #{data.height}
+    
+        p
+            a(href="#{fullImage}")
+                p #{fullImage}
+                img(src="#{fullImage}", width="#{data.width}")
+    
+        p
+            a(href="/") Do it again?

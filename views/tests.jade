@@ -1,0 +1,12 @@
+extends layout
+
+block append content
+    h2 Submission Results to Validate POST Data:
+    //- p PhantomJS Message\(PageTitle): #{message} 
+    p URL: 
+        a(href="#{data.url}", target="_blank") #{data.url}
+    p Viewport Width: #{data.width}
+    p Viewport Height #{data.height}
+    
+    p
+        a(href="/") Do it again?

@@ -1,0 +1,31 @@
+{
+    "fields": [
+        {
+            "label": "Site URL",
+            "name": "url",
+            "type": "text",
+            "required": true,
+            "placeholder": "Site URL",
+            "autofocus": true,
+            "pattern": false
+        },
+        {
+            "label": "Viewport Width",
+            "name": "width",
+            "type": "number",
+            "required": true,
+            "placeholder": "Width in PX",
+            "autofocus": false,
+            "pattern": "[0-9]+"
+        },
+        {
+            "label": "Viewport Height",
+            "name": "height",
+            "type": "number",
+            "required": true,
+            "placeholder": "Height in PX",
+            "autofocus": false,
+            "pattern": "[0-9]+"
+        }
+    ]
+}

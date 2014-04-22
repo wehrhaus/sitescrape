@@ -1,0 +1,24 @@
+doctype 5
+<!--[if IE 7 ]><html lang="en" class="ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+head
+    meta(charset="UTF-8")
+
+    title #{title} | SiteScrape
+    meta(name="viewport", content="width=device-width")
+    link(rel="shortcut icon", href="/favicon.ico")
+
+    block styles
+    != css("ui")
+    
+    block scripts
+    
+body
+    .container
+        block content
+            h1= title
+        
+    block scripts
+    != js("libs/jquery")
