@@ -1,7 +1,7 @@
 sitescrape
 ==========
 
-Requires an instance of phantomjs running on your server executed via with PATH set to [phantomjs|http://phantomjs.org/]
+Requires an instance of phantomjs running on your server executed via with PATH set to [phantomjs](http://phantomjs.org/)
 
 Given a URL -> return the url as a screenshot via png. Image dimensions will be based off Viewport Width/Height specified in form.
 
