@@ -1,3 +1,5 @@
+_An updated version of this app lives under [https://github.com/wehrhaus/aislyn.git]_
+
 sitescrape
 ==========
 
